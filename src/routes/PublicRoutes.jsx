@@ -1,10 +1,12 @@
-import { Route, Routes } from "react-router-dom";
-import CocktailPage from "../pages/CocktailPage";
+import { Routes, Route } from "react-router-dom";
+import NavBar from "../components/common/NavMenu/NavBar";
 import HomePage from "../pages/HomePage";
+import CocktailPage from "../pages/CocktailPage";
 
 const PublicRoutes = () => {
   return (
     <>
+      <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/cocktail" element={<CocktailPage />} />

@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import CocktailPage from "../pages/CocktailPage";
 import HomePage from "../pages/HomePage";
 
 const PublicRoutes = () => {
@@ -6,7 +7,7 @@ const PublicRoutes = () => {
     <>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/cocktail:id" element={<>Cocktail page</>} />
+        <Route path="/cocktail" element={<CocktailPage />} />
         <Route path="*" element={<>Página no encontrada</>} />
       </Routes>
     </>

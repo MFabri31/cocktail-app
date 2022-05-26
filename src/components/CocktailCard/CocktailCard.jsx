@@ -1,4 +1,5 @@
-import { Button, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const CockTailCard = () => {
   return (
@@ -7,7 +8,7 @@ const CockTailCard = () => {
       <Card.Body>
         <Card.Title>Titulo</Card.Title>
         <Card.Text>Descripción</Card.Text>
-        <Button variant="primary">Detalles</Button>
+        <Link to="/cocktail">Detalles</Link>
       </Card.Body>
     </Card>
   );

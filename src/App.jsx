@@ -1,10 +1,10 @@
-import HomePage from "./pages/HomePage";
+import PublicRoutes from "./routes/PublicRoutes";
 
 const App = () => {
   return (
     <>
       <main>
-        <HomePage />
+        <PublicRoutes />
       </main>
     </>
   );

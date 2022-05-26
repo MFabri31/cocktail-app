@@ -1,5 +1,13 @@
+import HomePage from "./pages/HomePage";
+
 const App = () => {
-  return <div>Cocktail App</div>;
+  return (
+    <>
+      <main>
+        <HomePage />
+      </main>
+    </>
+  );
 };
 
 export default App;

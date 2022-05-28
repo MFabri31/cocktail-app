@@ -1,12 +1,13 @@
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const CockTailCard = () => {
+const CockTailCard = ({ cocktail }) => {
+  console.log(cocktail);
   return (
     <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src={cocktail.strDrinkThumb} />
       <Card.Body>
-        <Card.Title>Titulo</Card.Title>
+        <Card.Title>Titulo: {cocktail.strDrink}</Card.Title>
         <Card.Text>Descripción</Card.Text>
         <Link to="/cocktail">Detalles</Link>
       </Card.Body>

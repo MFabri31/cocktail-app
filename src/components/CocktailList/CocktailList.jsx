@@ -1,10 +1,14 @@
+import { useContext } from "react";
 import { Col } from "react-bootstrap";
+import { CocktailContext } from "../../context/CocktailContext";
 import CockTailCard from "../CocktailCard";
 
 const CocktailList = () => {
-  const cocktailCards = [1, 2, 3, 4].map((elem) => (
+  const { cocktails } = useContext(CocktailContext);
+
+  const cocktailCards = cocktails.map((cocktail) => (
     <Col>
-      <CockTailCard />
+      <CockTailCard cocktail={cocktail} />
     </Col>
   ));
 

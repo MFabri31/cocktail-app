@@ -1,10 +1,13 @@
+import CocktailProvider from "./context/CocktailContext";
 import PublicRoutes from "./routes/PublicRoutes";
 
 const App = () => {
   return (
     <>
       <main>
-        <PublicRoutes />
+        <CocktailProvider>
+          <PublicRoutes />
+        </CocktailProvider>
       </main>
     </>
   );

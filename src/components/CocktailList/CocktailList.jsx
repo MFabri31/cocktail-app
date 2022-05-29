@@ -5,10 +5,9 @@ import CockTailCard from "../CocktailCard";
 
 const CocktailList = () => {
   const { cocktails } = useContext(CocktailContext);
-
   const cocktailCards = cocktails.map((cocktail) => (
     <Col>
-      <CockTailCard cocktail={cocktail} />
+      <CockTailCard key={cocktail.idDrink} cocktail={cocktail} />
     </Col>
   ));
 

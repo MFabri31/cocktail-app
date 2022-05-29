@@ -9,7 +9,7 @@ const PublicRoutes = () => {
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/cocktail" element={<CocktailPage />} />
+        <Route path="/cocktail/:id" element={<CocktailPage />} />
         <Route path="*" element={<>Página no encontrada</>} />
       </Routes>
     </>

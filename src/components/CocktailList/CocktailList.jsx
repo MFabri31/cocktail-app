@@ -1,11 +1,12 @@
 import { useContext } from "react";
 import { Col } from "react-bootstrap";
-import { CocktailContext } from "../../context/CocktailContext";
 import CockTailCard from "../CocktailCard";
+import { CocktailContext } from "../../context/CocktailContext";
 
 const CocktailList = () => {
   const { cocktails } = useContext(CocktailContext);
-  const cocktailCards = cocktails.map((cocktail) => (
+
+  const cocktailCards = cocktails?.map((cocktail) => (
     <Col>
       <CockTailCard key={cocktail.idDrink} cocktail={cocktail} />
     </Col>

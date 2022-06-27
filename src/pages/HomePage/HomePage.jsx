@@ -29,7 +29,7 @@ const HomePage = () => {
 
             {loading && <Loading />}
 
-            <Row className="justify-content-center mt-3">
+            <Row className="mt-3">
               <CocktailList />
             </Row>
           </section>

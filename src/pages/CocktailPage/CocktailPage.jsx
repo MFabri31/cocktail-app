@@ -8,7 +8,7 @@ const CocktailPage = () => {
       <section className="py-3">
         <Container>
           <Link to="/">Volver</Link>
-          <Row className="justify-content-center">
+          <Row className="justify-content-around">
             <CocktailDetails />
           </Row>
         </Container>

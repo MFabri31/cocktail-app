@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const CockTailCard = ({ cocktail }) => {
   const { idDrink, strCategory } = cocktail;
   return (
-    <Card style={{ width: "18rem" }} className="shadow mb-4 text-start">
+    <Card className="shadow mb-4 text-start">
       <Card.Img variant="top" src={cocktail.strDrinkThumb} />
       <Card.Body>
         <Card.Title>{cocktail.strDrink}</Card.Title>

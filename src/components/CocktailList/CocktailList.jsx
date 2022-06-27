@@ -7,8 +7,8 @@ const CocktailList = () => {
   const { cocktails } = useContext(CocktailContext);
 
   const cocktailCards = cocktails?.map((cocktail) => (
-    <Col>
-      <CockTailCard key={cocktail.idDrink} cocktail={cocktail} />
+    <Col md="3" key={cocktail.idDrink}>
+      <CockTailCard cocktail={cocktail} />
     </Col>
   ));
 
